@@ -3,9 +3,11 @@ package main
 import (
 	"fmt"
 	"task1/greet"
+	"task1/input"
 )
 
 func main() {
-	res := greet.Greet("Adlet", 4)
+	name, table := input.Input()
+	res := greet.Greet(name, table)
 	fmt.Println(res)
 }
